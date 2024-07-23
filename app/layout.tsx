@@ -1,3 +1,6 @@
+import { ThemeProvider } from "./context/ThemeContext";
+import ClientThemeWrapper from "./context/ClientThemeWrapper";
+import Navbar from "./components/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,7 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ThemeProvider>
+          <ClientThemeWrapper>
+            <Navbar />
+            {children}
+          </ClientThemeWrapper>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
