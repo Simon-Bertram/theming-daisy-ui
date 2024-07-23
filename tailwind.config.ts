@@ -29,10 +29,10 @@ const config: Config = {
     themes: [
       {
         "custom-theme": {
-          primary: "#a991f7",
-          secondary: "#f6d860",
-          accent: "#37cdbe",
-          neutral: "#3d4451",
+          primary: "#8ECAE6",
+          secondary: "#219EBC",
+          accent: "#023047",
+          neutral: "#FB8500",
           "base-100": "#ffffff",
 
           "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes

@@ -47,13 +47,27 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex gap-5">
-          <button className="btn" onClick={() => changeTheme("business")}>
+          <button
+            className="btn btn-primary"
+            onClick={() => changeTheme("business")}
+          >
             Business
           </button>
         </div>
         <div className="flex gap-5">
-          <button className="btn" onClick={() => changeTheme("cyberpunk")}>
+          <button
+            className="btn btn-secondary"
+            onClick={() => changeTheme("cyberpunk")}
+          >
             Cyberpunk
+          </button>
+        </div>
+        <div className="flex gap-5">
+          <button
+            className="btn btn-secondary"
+            onClick={() => changeTheme("custom-theme")}
+          >
+            Custom Theme
           </button>
         </div>
       </ul>
